@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_li_ask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/asker_bubble"
+        android:text="提问"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#000"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_li_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/answer_bubble"
+        android:layout_below="@id/tv_li_ask"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        >
+
+    <TextView
+        android:id="@+id/tv_li_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回答"
+        android:textSize="18sp"
+        android:textColor="#000"
+        />
+        <ImageView
+            android:id="@+id/iv_li_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+</RelativeLayout>
